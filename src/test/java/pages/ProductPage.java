@@ -14,4 +14,11 @@ public class ProductPage extends PageBase{
     public boolean isItProductPage() {
         return productDescription.isDisplayed();
     }
+
+    @FindBy(id="messages")
+    WebElement message;
+
+    public boolean isItMessageProductPage() {
+        return message.isDisplayed();
+    }
 }
